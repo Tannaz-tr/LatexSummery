@@ -1,0 +1,152 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+
+\title{A Summary on ``
+	Tactile Sensors for Minimally Invasive Surgery: A Review of the State-of-the-Art, Applications, and Perspectives "\\
+	%{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+	%should not be used}
+	%\thanks{Identify applicable funding agency here. If none, delete this.}
+}
+\author{\IEEEauthorblockN{Tannaz Torkaman}
+	\IEEEauthorblockA{\textit{RoboSurge Lab} \\
+		\textit{Concordia University}\\
+		Montreal, Canada \\
+		tannaz.torkaman@mail.concordia.ca}}
+%\and
+%\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%}
+
+
+\maketitle
+
+\begin{abstract}
+	One of the significant evolutions in medicine is minimally invasive surgeries where the surgeon inserts special instruments through a small incision on the patient's body. However, one major limitation of this approach is the fact that the surgeon loses the sense of touch for getting any feedback. This is why tactile sensors are vital for these types of applications. In this literature review \cite{b1}, different sensors and their principles and limitations will be discussed to demonstrate the best approach for various applications. 
+\end{abstract}
+
+%\begin{IEEEkeywords}
+%component, formatting, style, styling, insert
+%\end{IEEEkeywords}
+
+\section{Introduction}
+Minimally invasive surgery, due to its unique advantages such as reducing the anesthesia time, blood loss, infection, etc. is preferred among other surgical approaches. Furthermore, the emergence of robots in this field has increased accuracy. However, there are certain limitations, one of which is losing the sense of touch for surgeons, which would result in little or no haptic feedback.\\ 
+To solve this problem, different types of tactile sensors were proposed. The main challenge for designing the sensors is the fact that sensors must meet specific physical and functional requirements. They must work under static and dynamic conditions. Another challenge is holding the body tissue, which acts as a viscoelastic material and leads to slippage. Also, sensors must be magnetic resonance imaging (MRI) compatible.\\ 
+The tactile sensors can be categorized into two main groups based on their principle of sense. Electrical-based sensor and optical sensors are the two main groups which were studied in this paper. 
+
+\section {Tactile Sensors in Minimally Invasive Surgery}
+While many tactile sensors have been developed in the last decade, the applications of the sensors must mainly be considered for various purposes. Few of these sensors were commercialized due to their physical requirements. Defining the use of sensors for each case beforehand is essential; hence different types of these sensors were used for specific applications, which will be discussed further.
+\subsection{Electrical Based Tactile Sensor}
+Electrical-based sensors were the most adopted for robotic minimally invasive surgery. This type can be categorized into three groups 
+\subsubsection{Pizoresistive Tactile Sensor}
+Physical stress causes strain, which will result in changing the resistivity. Strain gauges are an example of this type of sensor. Eq \ref{1}  demonstrates the relation between resistivity and the Poisson ratio. 
+\begin{equation}
+	\frac{\Delta R}{R}=(1+2\vartheta)\frac{\Delta L}{L}+\frac{\Delta \rho }{\rho }
+	\label{1}
+\end{equation}
+where R, $\vartheta$, and $\rho$ are the indicators for the resistance of the piezo resistor, Poisson's ratio, and resistivity. Any change in pressure, force, deformation, and temperature can cause changes in resistance.\\
+micro piezoresistive force sensor was proposed and tested on an animal model, Aiming to measure the interaction force between blood vessel and catheter. Later on, Dargahi and Najarian presented micro strain-gauge sensors to design endoscopic grasper. While other studies demonstrate that the safety of robotic surgery can be improved with force feedback. Researches have been done to improve the fabrication, to sensorize a bipolar forceps, etc.\\The advantages of using piezoresistive tactile sensors are the high dynamic range of measurement, uncomplicated manufacturing process, durability, high spatial resolution. However, the major problem is the hysteresis, which decreases the reliability of the system by reducing sensitivity and repeatability. 
+
+%--------------------------------------------------------
+\subsubsection{Piezoelectric Tactile Sensor}
+The accumulation of charge on one surface produces a potential difference, which is known as piezoelectricity. When the charges start moving from high potential to low potential, it causes constant mechanical stress. The Eq \ref{3} demonstrate this relation where V is the generated electric field and $\sigma$ is the stress.
+\begin{equation}
+	V= f\sigma
+	\label{3}
+\end{equation}
+In recent studies, tactile piezoelectric sensors were used for measuring tissue stiffness at the sip of the surgical catheter and biopsy needle. This type of sensor has high sensitivity and accuracy, but they cannot detect static forces, which is a significant limitation; also, they are thermally sensitive.
+\subsubsection{Capacitive Tactile Sensor}
+Two parallel plates with small gaps form a capacitor. By applying potential differences on two plates, charges will be accumulated on each surface. The Eq \ref{4} shows the effect of normal force on output voltage and capacitor.
+\begin{equation}
+	F=\frac{CV^2}{2d} 	
+	\label{4}
+\end{equation}
+In 2012, a sandwich design was proposed. In this case, the applied load deflected the dielectric, which was mounted between two metal plates. The results showed that this sensor could measure static and dynamic force in a specific range. Another study used capacitive sensors on jaws and forceps where it would be under 3-DOF load. Designed forceps and the prototype can be seen in fig \ref{fig2} .\\
+\begin{figure}[b]
+	\centerline{\includegraphics{fig5.png}}
+	\caption{(a) 3D designed of the sensorized forceps, (b) prototype with an integrated sensor}
+	\label{fig2}
+\end{figure}
+While Capacitive sensors are highly sensitive and precise, they have a significant limitation, which is hysteresis and cross-talk. Although the technology made it possible to design thinner layers, the electromagnetic interference with neural or cardiac activity would be another limitation for using this approach in heart and brain surgery.  
+%--------------------------------------------------------
+\section{Optical-Based Tactile sensor}
+Using optical-based tactile sensors in medical applications dates back to 1953s when they were used for cardiac diagnosis measurements. Using optical-based tactile sensors was beneficial since they were biocompatible, magnetic, and electric passive. The mentioned qualities, as well as smaller size compared to other tactile sensors, made this type suitable to be used in brain and cardiac surgery.
+Optical fiber sensors consist of a light source, and the light is transmitted from this source into the fiber. Passing through the structure, the modulated light finds its way to the detector. Based on their functionality, the optical fibers can be divided into three types. 
+
+%-----------------------------------------------------------
+\subsubsection{Light Intensity Modulation Optical Tactile Sensor: }
+The sensing principle is based on intensity-modulation, which relies on the effect of external parameters such as force, pressure, and temperature on the power of light. This type of sensing has many advantages, such as being inexpensive, Thermally insensitivity, being simple in design, and being easy to implement. Also, LIM sensors can be used to form multi DoF sensors. Bending loss and coupling loss principles are two primary modulation mode.\\ 
+Light intensity modulation sensors have been used extensively in minimally invasive surgery such as cardiac surgery on a beating heart with different aims such as mitral valve displacement where surgeons had real-time feedback or cardiac ablation. \\
+LIM sensors are popular because of their lower cost compare to other methods; however, there is still some limitation in this approach. Due to the fluctuation of the light source, fiber misaligns in the coupling loss model, or deflects in the bending model, and there would be undesired drift in the data. 
+%-----------------------------------------------------------
+\subsubsection{Wavelength Modulation Optical Sensor}
+Compare with the light intensity modulation sensor; the wavelength modulation sensor proposed higher resolution. The Fiber Bragg Grating was developed in 1978 with the change in the refractive index of the optical fiber via electromagnetic waves. Later on, Bragg grating developed with another method where exposure ti two-beam UV interface. FBG is commercialized to be placed at the tip of the RF ablation catheter; also, it is used on the biopsy needle to measure the needle deflection when it interacts with tissue and on laparoscopic instruments.\\ 
+Being MRI and biocompatible made FBG sensors popular compare to non-optical sensing principles. Flexibility and the ability to be miniaturized are among the other advantages of FBGs. However, there are still limitations, such as thermal sensitivity and being expensive.  
+
+%------------------------------------------------------------
+\subsubsection{Phase Modulation Optical Tactile Sensor }
+This type of optical sensor works based on Fabry-Perot interferometry (FPI), which is demonstrated in Fig \ref{fig3}. Light either reflects internally or leaves the emitting Fabry-Perot fiber, categorizing the sensing principle into intrinsic and extrinsic.\\
+\begin{figure}[h]
+	\centerline{\includegraphics{fig6.png}}
+	\caption{Fabry-Perot configuration: (a) extrinsic and (b) intrinsic.}
+	\label{fig3}
+\end{figure}
+The FBI force sensing system is used in needle insertion applications like prostate cancer brachytherapy. Being highly sensitive as well as the ability to be integrated into small surgical instruments, are the main advantages of FPI sensors. They are also biocompatible and MRI friendly and do not need intense signal proccing algorithms; also, FPI sensors can be sterilized with Ethylene oxide and steam. In the other hand, they are challenging in handling because of maintaining the calibration. There are prone to fracture because of the FPI cavities. The cavities are also problematic for sensor performance since it can alter the light path. 
+%------------------------------------------------------------
+%------------------------------------------------------------
+\section{Conclusion}
+Novel tactile sensors were categorized and reviewed in this paper. The strength points of each sensor, as well as their limitation, were demonstrated for Minimally invasive surgery and robotic surgery applications. Some sensing principles were not discussed in this paper, such as magnetorheological sensors and hybrid sensors. 
+%------------------------------------------------------------
+%\bibliographystyle{ieeetr} 
+%\bibliography{Assignment1}
+\begin{thebibliography}{00}
+\bibitem{b1} Bandari, J. Dargahi and M. Packirisamy, "Tactile Sensors for Minimally Invasive Surgery: A Review of the State-of-the-Art, Applications, and Perspectives," in IEEE Access, vol. 8, pp. 7682-7708, 2020, doi: 10.1109/ACCESS.2019.2962636.
+%\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+%\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+%\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+%\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+%\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+%\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\end{thebibliography}
+%\vspace{12pt}
+%\color{red}
+%IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+%-----------------------------------------------------------
+\end{document}
