@@ -1,0 +1,147 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+
+\title{A Summary on ``Composite magnetorheological elastomers for tactile displays: Enhanced
+	MR-effect through bi-layer composition"\\
+	%{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+	%should not be used}
+	%\thanks{Identify applicable funding agency here. If none, delete this.}
+}
+\author{\IEEEauthorblockN{Tannaz Torkaman}
+	\IEEEauthorblockA{\textit{RoboSurge Lab} \\
+		\textit{Concordia University}\\
+		Montreal, Canada \\
+		tannaz.torkaman@mail.concordia.ca}}
+%\and
+%\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%}
+
+
+\maketitle
+
+\begin{abstract}
+	In this study, a novel approach for tactile sensors was studied. Magnetorheological elastomers (MREs) showed promising results for being used in tactile sensors. In this study \cite{b1}, the effect of the magnetic field is investigated when the samples of MREs are subjected perpendicularly to the magnetic field. Also, to study the MR-effect, composites of bi-layer MREs with non-MRE elastomers were introduced to see the effect of the magnetic field on their elastic module. This study showed that the enhancement of MR-effect in compositions of MREs with non-MRE materials is possible.
+\end{abstract}
+
+%\begin{IEEEkeywords}
+%component, formatting, style, styling, insert
+%\end{IEEEkeywords}
+
+\section{Introduction}
+
+\subsection{Background}
+Magnetorheological elastomers (MREs) are composite materials with controllable properties. The tunability of MREs has been used in different applications. MREs consist of two main components:
+\begin{itemize}
+	\item An elastomeric matrix such as silicon rubber and natural rubber 
+	\item Fillers such as Iron and carbonyl iron particle (CIP)
+\end{itemize}
+MREs also are known for exhibiting different mechanical properties in magnetic fields, which lead them to have different force-displacement behavior. To quantify this effect, the 'MR-effect' indicator is defined. In this study, silicon-rubber-MRE was used for tactile display, which was discussed in the previous paper. 
+\subsection{Problem Statement}
+In MRE based tactile display, the contact force between the user's finger and the MRE is used to calculate the depth. Desirable stiffness is achieved by determining the desired gap separation, which can be controlled with PID control of magnets' movement. Based on this concept, two designs were proposed.\\
+As can be seen in Fig \ref{fig7} , in design (a), the applied magnetic field is in the direction of the surgeon's finger. In this, the maximum MR effect is expected. The limitation of this approach is the limited provided space for the surgeon's hand to move.  However, in design (b), where the magnetic field is perpendicular to the force direction, the space limitation is solved but would lead to less MR-effect. Also, in design (b) controlling the elastic module of MRE is challenging. 
+\begin{figure}[b]
+	\centerline{\includegraphics{fig7.png}}
+	\caption{Proposed MRE-based tactile display with the magnetic field applied (a) in the direction of force and (b) perpendicular to the direction of force.}
+	\label{fig7}
+\end{figure}
+%-----------------------------------------------------------
+%------------------------------------------------------------
+\section{Methods}
+\subsection{Magnetic Field}
+To control the distance between four Neodymium N52 magnets, non-ferrous nuts and bolts were used. Furthermore, to obtain the range of the average magnetic field, the magnets and air-gap modeled in the Finite element method with a 45 mm to 95mm gap and 55 mm increment. The worst-case scenario in terms of longitudinal homogeneity of the field is a 45 mm gap. In the experimental model, the mentioned distance between magnets was measured with a gauss-meter.
+%-----------------------------------------------------------
+\subsection{Material Selection}
+In this article, it was assumed that the elastic modulus of MRE would increase non-linearly from its initial value wit the increase of the magnetic field. For non-MRE material, this value is constant. It was proven that the composite of both MRE based material and non-MRE exhibit more significant changes in the young module when the magnetic field is evaluated. Based on solving fundamental equations, Dragon Skin (Smooth On Inc., PA, USA) was used as the non-MRE material in the bi-layer composite.\\
+Three types of MREs with 25\%, 35\%, and 45\% volume fractions of CIPs demonstrated as A, B, and C, and Dragon Skin as non-MRE material were fabricated. The minimum selected percentage would have a minimum of MR-effect. The matrix elastomers for MREs were EcoFlex (Smooth On Inc., PA, USA). To study the properties of bi-layer composites, the combination of MREs and Dragon Skin ( D ) was presented labeled as A-B, A-C, A-D, B-C, B-D, and C-D. Three samples per group were prepared. 
+
+%------------------------------------------------------------
+\subsection{Learning Method}
+Because of the low strain rate palpation of the surgeon's finger, the MREs tested in Quasi-static compression. The samples were subjected to four cycles of 0.1 Hz triangular compressive displacement. After finding the force-displacement curve secant modulus, S of each model was calculated at 10\% and 20\%.
+%------------------------------------------------------------
+%------------------------------------------------------------
+\section{Results} \label{results}
+\subsection{Stress-strain characteristics}
+Three compressive tests were performed for each sample based on ISO 7743. Four loadings and unloadings were applied for each test. Three samples of nine MREs, as mentioned in the previous section, were tested under seven various magnetic fields as well as three similar tests on the Dragon Skin. \\
+A total of 192 tests were performed to create the average strain curves for each material. Based on the strain curved from these tests, it can be seen that the elastic module of the bi-layer composites was between the elastic modulus of their constituents. For example, the elastic module of material C is 281 kPa, and for the Dragon Skin, it was 3635 kPa, while for the composite C-D, it is 388 kPa. 
+
+%------------------------------------------------------------
+%------------------------------------------------------------
+\subsection{Effect of Magnetic Field}
+Change of magnetic field in single- and bi-layer samples demonstrated positive effects on increasing the elastic moduli. Furthermore, it was concluded that MREs with higher volume fraction, the MR-effect is higher. In contrast with bi-layer MRE and the Dragon Skin, which exhibit no initial softening effects, single-layer MRE Showed ad initial strain-softening effect at strain below 10\% under magnetic field followed by strain-stiffening at higher strains. However, they did not exhibit a softening effect without a magnetic field. In Fig \ref{fig8}; the stress-strain curve of MRE C can be seen at zero and 365 mT magnetic field.\\
+\begin{figure}[t]
+	\centerline{\includegraphics{fig8.png}}
+	\caption{initial strain-softening in MRE C in the presence of magnetic field.}
+	\label{fig8}
+\end{figure}
+\section{Major Contributions and Findings}
+The minimum MR-effect was observed for MRE with 160\% at 365 mT, whereas the maximum MR-effect with 253\% was for MRE C-D. The weaker MR-effect was because of the transverse application of the magnetic field, which showed that MREs would exhibit a weaker MR-effect when they are subjected in a perpendicular axis to the direction of the magnetic field. Also, for MRE-MRE composites, the MR-effect decreased with respect to the strongest MRE; hence it was not desirable to use MRE-MRE composites. In addition, MRE-non-MRE composites showed higher elastic moduli. All the findings related to the elastic moduli of different samples can be seen in Fig \ref{fig9}. 
+\begin{figure}[t]
+	\centerline{\includegraphics{fig9.png}}
+	\caption{modulus of elasticity of MREs with respect to the change in magnetic field for single-layer MREs, and MRE-non-MRE composites.}
+	\label{fig9}
+\end{figure}
+
+%------------------------------------------------------------
+%------------------------------------------------------------
+\section{Limitations}
+One major limitation of this study is considering isotropic MREs while neglecting the behavior of anisotropic MREs. Furthermore, the enhancement phenomenon at the macro and micro level must be studied. Also, the effect of choosing a sandwich model for MREs was another subject that needs to be investigated to achieve better elastic moduli. 
+\section{Conclusions}
+In this study, the MRE-based haptic display was conceptualized, and it is concluded that MRE can be considered amongst the best options for developing a haptic display. The first objective of this study was to investigate the effect of the magnetic field and its direction on the MR-effect. Based on the theoretical approach, it was expected to obtain less MR-effect when the magnetic field is in the transverse direction. To make up for this loss, composites of bi-layers were introduced. The experimental tests showed the same results; also, in the presence of a magnetic field, there was an initial strain softening.  
+%-------------------------------------------------------------
+%-------------------------------------------------------------
+%\bibliographystyle{ieeetr} 
+%\bibliography{Assignment1}
+\begin{thebibliography}{00}
+\bibitem{b1} Alkhalaf A, Hooshiar A, Dargahi J. Composite magnetorheological elastomers for tactile displays: Enhanced MReffect through Bi-layer composition. Composites Part B: Engineering. 2020 Feb 27:107888
+%\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+%\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+%\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+%\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+%\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+%\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\end{thebibliography}
+%\vspace{12pt}
+%\color{red}
+%IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+%-----------------------------------------------------------
+
+\end{document}
